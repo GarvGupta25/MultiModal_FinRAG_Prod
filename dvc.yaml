@@ -1,0 +1,10 @@
+# DVC pipeline definition -- versions the document corpus. Meant to run in the
+# Stage 4 Docker environment (or your own machine) where `dvc` and `git` are
+# available together; not required for the Colab notebook to work.
+stages:
+  ingest_corpus:
+    cmd: echo "Documents are added via POST /ingest at runtime; this stage tracks data/raw for versioning."
+    deps:
+      - data/raw
+    outs:
+      - data/processed

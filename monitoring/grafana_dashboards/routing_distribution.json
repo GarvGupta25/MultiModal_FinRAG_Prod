@@ -1,0 +1,15 @@
+{
+  "title": "FinRAG - Routing Distribution",
+  "panels": [
+    {
+      "type": "piechart",
+      "title": "Queries per Tier",
+      "targets": [{ "expr": "sum by (tier) (finrag_queries_per_tier)" }]
+    },
+    {
+      "type": "stat",
+      "title": "Cache Hit Rate",
+      "targets": [{ "expr": "rate(finrag_cache_hits[1h]) / rate(finrag_total_queries[1h])" }]
+    }
+  ]
+}

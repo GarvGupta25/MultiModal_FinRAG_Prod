@@ -1,0 +1,59 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+.venv/
+venv/
+env/
+.env
+.env.*
+!.env.example
+
+# Build and packaging
+build/
+dist/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Runtime data
+data/raw/
+data/chromadb/
+data/*.db
+data/*.sqlite
+*.sqlite
+*.sqlite3
+*.db
+chromadb/
+chroma_db/
+
+# Caches and generated artifacts
+cache/*.json
+cache/*.pkl
+cache/*.db
+*.log
+logs/
+tmp/
+temp/
+
+# Notebooks
+.ipynb_checkpoints/
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Secrets and credentials
+*.pem
+*.key
+*.crt
+credentials.json
+token.json
+service-account*.json

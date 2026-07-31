@@ -1,0 +1,10 @@
+{
+  "title": "FinRAG - Token Savings",
+  "panels": [
+    {
+      "type": "timeseries",
+      "title": "Cumulative Tokens Saved vs Tier-3 Baseline",
+      "targets": [{ "expr": "finrag_tokens_saved_total" }]
+    }
+  ]
+}
